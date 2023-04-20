@@ -2,37 +2,21 @@
 
 namespace BasicCorePrograms
 {
-    internal class FlipCoin
+    internal class Program
     {
         static void Main(string[] args)
         {
-            int heads = 0;
-            int tails = 0;
+            //getting input from user to execute specific code
+            Console.WriteLine("Please choose your program");
+            Console.WriteLine("1.FlipCoin \n2.Leap Year");
+            int option = int.Parse(Console.ReadLine());
 
-            Console.WriteLine("Enter number of times to flip coin:");
-            int flips = Convert.ToInt32(Console.ReadLine());
-
-            Random rndm = new Random();
-            for (int i = 0; i < flips; i++)
+            switch (option)
             {
-                int result = rndm.Next(2);
-                if (result == 0)
-                {
-                    Console.WriteLine("Heads it is!");
-                    heads++;
-                }
-                else
-                {
-                    Console.WriteLine("Tails it is!");
-                    tails++;
-                }
+                case 1: FlipCoin.FlipTheCoin(); break;
+                case 2: LeapYear.CheckLeapYear();break;
             }
 
-            double headsPercentage = (double)heads / flips * 100;
-            double tailsPercentage = (double)tails / flips * 100;
-
-            Console.WriteLine("Percentage of heads: {0}%", headsPercentage);
-            Console.WriteLine("Percentage of tails: {0}%", tailsPercentage);
         }
     }
 }
