@@ -46,6 +46,7 @@
     <Compile Include="FlipCoin.cs" />
     <Compile Include="HarmonicNumber.cs" />
     <Compile Include="LeapYear.cs" />
+    <Compile Include="PrimeFactor.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -8,7 +8,7 @@ namespace BasicCorePrograms
         {
             //getting input from user to execute specific code
             Console.WriteLine("Please choose your program");
-            Console.WriteLine("1.FlipCoin \n2.Leap Year \n3.Harmonic Number");
+            Console.WriteLine("1.FlipCoin \n2.Leap Year \n3.Harmonic Number \n4.Prime Factor");
             int option = int.Parse(Console.ReadLine());
 
             switch (option)
@@ -16,6 +16,13 @@ namespace BasicCorePrograms
                 case 1: FlipCoin.FlipTheCoin(); break;
                 case 2: LeapYear.CheckLeapYear();break;
                 case 3: HarmonicNumber.CalculateHarmonicNumber();break;
+                case 4:
+                    Console.WriteLine("Please enter positive number :");
+                    int num = int.Parse(Console.ReadLine());
+                    PrimeFactor GetPrimeFactor = new PrimeFactor();
+                    int[] factor = GetPrimeFactor.GetPrimeFactors(num);
+                    Console.WriteLine(string.Join(", ", factor));
+                    break;
             }
 
         }
