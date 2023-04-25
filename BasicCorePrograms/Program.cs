@@ -8,7 +8,7 @@ namespace BasicCorePrograms
         {
             //getting input from user to execute specific code
             Console.WriteLine("Please choose your program");
-            Console.WriteLine("1.FlipCoin \n2.Leap Year \n3.Harmonic Number \n4.Prime Factor \n5.Quotient Remainder");
+            Console.WriteLine("1.FlipCoin \n2.Leap Year \n3.Harmonic Number \n4.Prime Factor \n5.Quotient Remainder\n6.Swap Numbers");
             int option = int.Parse(Console.ReadLine());
 
             switch (option)
@@ -26,6 +26,10 @@ namespace BasicCorePrograms
                 case 5:
                     QuotientRemainder.GetQuotientRemainder();
                     break; 
+                case 6:
+                    SwapNumbers.GetSwappedNumbers();
+                    break;
+
                 default: Console.WriteLine("Please try again and choose from given options only.");
                     break;
                     
