@@ -6,14 +6,15 @@ using System.Threading.Tasks;
 
 namespace BasicCorePrograms
 {
-    public class PrimeFactor
+    class PrimeFactor
     {
          public int[] GetPrimeFactors(int num)
          {
+
                int[] factors = new int[num];
                int index = 0;
                int divisor = 2;
-
+            
                while (num > 1)
                {
                    if (num % divisor == 0)
@@ -35,6 +36,7 @@ namespace BasicCorePrograms
             
               return primeFactors;
          }
+
 
     }
 }
