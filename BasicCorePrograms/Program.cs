@@ -8,7 +8,7 @@ namespace BasicCorePrograms
         {
             //getting input from user to execute specific code
             Console.WriteLine("Please choose your program");
-            Console.WriteLine("1.FlipCoin \n2.Leap Year \n3.Harmonic Number \n4.Prime Factor \n5.Quotient Remainder\n6.Swap Numbers \n7.Even Or Odd \n8.Alphabet is Vowel or Not");
+            Console.WriteLine("1.FlipCoin \n2.Leap Year \n3.Harmonic Number \n4.Prime Factor \n5.Quotient Remainder\n6.Swap Numbers \n7.Even Or Odd \n8.Alphabet is Vowel or Not\n9.Largest Number");
             int option = int.Parse(Console.ReadLine());
 
             switch (option)
@@ -34,6 +34,9 @@ namespace BasicCorePrograms
                     break;
                 case 8:
                     IsVowel.IsVowelOrNot();
+                    break;
+                case 9:
+                    LargestNumber.GetLargestNumber();
                     break;
                 default: Console.WriteLine("Please try again and choose from given options only.");
                     break;
