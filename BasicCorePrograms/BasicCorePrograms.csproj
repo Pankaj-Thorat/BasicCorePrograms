@@ -49,6 +49,7 @@
     <Compile Include="IsVowel.cs" />
     <Compile Include="LargestNumber.cs" />
     <Compile Include="LeapYear.cs" />
+    <Compile Include="PowerOfTwo.cs" />
     <Compile Include="PrimeFactor.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
